@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phelong Flix - A melhor plataforma de streaming</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+        }
+       
+        .content {
+            padding: 20px;
+        }
+        .featured {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .featured img {
+            width: 30%;
+            border-radius: 10px;
+        }
+        .featured-text {
+            width: 65%;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        @media (max-width: 768px) {
+            .featured {
+                flex-direction: column;
+            }
+            .featured img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .featured-text {
+                width: 100%;
+            }
+        }
+    </style>
+<header>
+    <div class="container">
+        <div class="logo">Phelong Flix</div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="contato.html">Contato</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </div>
+</header>
+<body>
+    <div class="topSide">
+        <div class="netflixIcon">
+            <a href="#">
+                <img src="tst new lg.png" class="img-netflixIcon" />
+            </a>
+        </div>
+        <div class="parent-login">
+            <form class="login-card">
+                <h1>Sign In</h1>
+                <div class="userInput">
+                    <input type="text" name="email" placeholder="Email or phone number" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)" />
+                </div>
+                <div class="userInput">
+                    <input type="password" name="password" placeholder="Password" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)" />
+                </div>
+                <div>
+                    <button class="btn-login">Sign In</button>
+                </div>
+                <div class="remMe">
+                    <div>
+                        <input type="checkbox">
+                        <label class="cText">Remember me</label>
+                    </div>
+                </div>
+                <div class="login2">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240313103010/fb-icon.png" height="20" /><a href="#" class="cLink fb">Login with Facebook</a>
+                </div>
+                <div class="signUp">
+                    Novo na PhelongFlix? <a href="#" class="sLink">Registre-se agora</a>.
+                </div>
+                <div class="google cLink ">
+                    This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
+                </div>
+            </form>
+        </div>
+    </div>
+  </body>
